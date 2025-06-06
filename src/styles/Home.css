@@ -87,6 +87,7 @@
 
 .about-me-section {
     padding: 6em 0;
+    padding-bottom: 18em;
 }
 
 .about-me-content {
@@ -112,7 +113,7 @@
 
 .about-me-text-column p {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.7;
     color: #e0e0e0;
     text-align: justify;

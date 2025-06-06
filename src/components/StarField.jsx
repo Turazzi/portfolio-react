@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react"; 
-import './styles/StarField.css';
+import '../styles/StarField.css';
 
 export default function StarField() {
     const starContainerRef = useRef(null); 

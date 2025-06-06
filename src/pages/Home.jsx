@@ -1,7 +1,7 @@
 import React from "react";
 import '../style/Home.css'
 import profileImage from '../assets/icons/perfil.jpeg';
-import draw from '../assets/icons/eu-desenho.png'
+import draw from '../assets/icons/perfil-desenho.png'
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Home = () => {
@@ -42,7 +42,7 @@ const Home = () => {
                         <h2 className='about-me-title'>Sobre mim</h2>
                         <p>
                             Sou estudante de Engenharia de Software, com foco em backend e interesse por frontend. 
-                            Gosto muito da área de tecnologia e estou em busca da minha primeira oportunidade profissional.
+                            Gosto muito da área de tecnologia e estou em busca da minha primeira oportunidade profissionalç.
                             Neste portfólio, compartilho alguns dos meus projetos e um pouco sobre mim.
                         </p>
                     </div>
