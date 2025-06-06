@@ -11,8 +11,8 @@ function Header() {
 
                 <nav className='main-nav'>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/About">Sobre</Link></li>
+                        <li><Link to="/">Início</Link></li>
+                        <li><Link to="/About">Habilidades</Link></li>
                         <li><Link to="/Projects">Projetos</Link></li>
                         <li><Link to="/Contacts">Contatos</Link></li>
                     </ul>
