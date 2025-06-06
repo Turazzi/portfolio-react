@@ -1,7 +1,6 @@
-// Em: src/components/Header.jsx
-
 import React from "react";
-import './styles/Header.css'; // Importa os estilos específicos deste componente
+import './styles/Header.css'; 
+
 
 function Header() {
     return (
