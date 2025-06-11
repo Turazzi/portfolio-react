@@ -1,0 +1,82 @@
+.page-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+    padding: 2em 0;
+}
+
+.page-title {
+    font-size: 2.5em;
+    color:lightpink;
+    font-family: 'JetBrains Mono', monospace;
+    margin-bottom: 2em;
+}
+
+.skills-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%; /* Faz o grid ocupar o espaço do page-container */
+}
+
+/* --- ESTILO DO CARD ATUALIZADO --- */
+.skill-showcase-card {
+  background-color: lightpink;
+  color: black;
+  border-radius: 20px;
+  padding: 1.5rem; /* Padding interno do card */
+
+  /* O card não tem mais altura fixa, ela se adapta ao conteúdo */
+  display: flex;
+  flex-direction: column; /* Empilha o título e a lista de skills */
+  
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-showcase-card:hover {
+  background-color: white;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Título dentro do card */
+.skill-showcase-card h2, .skill-showcase-card h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1rem; /* Espaço entre o título e a lista de tags */
+}
+
+/* --- ESTILOS PARA AS TAGS DE HABILIDADE --- */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as tags quebrem a linha */
+    gap: 10px;       /* Espaço entre as tags */
+}
+
+.skill-tag {
+    background-color: rgba(0, 0, 0, 0.2); /* Fundo semi-transparente */
+    color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Ícone dentro da tag */
+.skill-tag svg {
+    font-size: 1.1em;
+}
+
+
+/* --- RESPONSIVIDADE PARA CELULARES --- */
+@media (max-width: 768px) {
+  .skills-showcase-grid {
+    grid-template-columns: 1fr; /* Em telas pequenas, os cards ficam um sobre o outro */
+  }
+}

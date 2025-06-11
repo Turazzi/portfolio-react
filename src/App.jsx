@@ -7,12 +7,12 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <StarField />
       <Header />
       <AppRoutes />
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 
