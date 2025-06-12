@@ -8,7 +8,10 @@
 }
 
 .about-page-wrapper {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 0.8em;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
     padding: 4em 0;
 }
 
@@ -65,6 +68,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    align-content: flex-start;
 }
 
 .skill-tag {

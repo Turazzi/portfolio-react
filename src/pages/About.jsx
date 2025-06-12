@@ -7,10 +7,10 @@ import { SiKotlin, SiJavascript, SiPostman, SiSpringboot, SiBulma, SiOracle, SiP
 
 const About = () => {
   return (
-    <main id="habilidades" className='page-container about-page-wrapper'>
+    <main id="sobre" className='page-container about-page-wrapper'>
         <h1 className='page-title'>Minhas Habilidades</h1>
 
-        <div id='sobre' className='skills-showcase-grid'>
+        <div className='skills-showcase-grid'>
 
             <div className='skill-showcase-card'>
                 <h2><FaJava /> Linguagens</h2>
@@ -27,7 +27,7 @@ const About = () => {
                 <h2><FaReact /> Frameworks/Bibliotecas</h2>
                 
                 <div className='skill-list'>
-                    <span className='skill=tag'><FaReact /> React.js</span>
+                    <span className='skill-tag'><FaReact /> React.js</span>
                     <span className='skill-tag'><SiSpringboot /> Spring Boot</span>
                     <span className='skill-tag'><SiBulma /> Bulma</span>
                     <span className='skill-tag'><FaNodeJs /> Node.js</span>
