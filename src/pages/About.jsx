@@ -7,7 +7,7 @@ import { SiKotlin, SiJavascript, SiPostman, SiSpringboot, SiBulma, SiOracle, SiP
 
 const About = () => {
   return (
-    <main className='page-container'>
+    <main id="habilidades" className='page-container about-page-wrapper'>
         <h1 className='page-title'>Minhas Habilidades</h1>
 
         <div id='sobre' className='skills-showcase-grid'>

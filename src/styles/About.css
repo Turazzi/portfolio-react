@@ -1,15 +1,91 @@
-.page-container {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 90vh;
-    padding: 2em 0;
-}
-
 .page-title {
-    font-size: 2.5em;
-    color:lightpink;
+    text-align: center;
+    font-size: 2.3rem;
+    color: lightpink;
     font-family: 'JetBrains Mono', monospace;
-    margin-bottom: 2em;
+    padding-top: 2em;
+    margin-bottom: 2.5em;
 }
 
+.about-page-wrapper {
+    scroll-margin-top: 100px;
+    padding: 4em 0;
+}
+
+.page-container {
+    display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 2em 0;
+}
+
+.skills-showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.skill-showcase-card {
+    background-color: transparent;
+
+    border: 0.2em solid lightpink;
+    border-radius: 0.9em;
+
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-showcase-card:hover {
+    border-color: #e0e0e0;
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.2);
+    cursor: pointer;
+}
+
+.skill-showcase-card h2 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e0e0e0;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tag {
+    background-color: rgb(255,255,255, 0.1);
+    color: #e0e0e0;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.skill-tag svg {
+  font-size: 1.2em;
+  color: lightpink;
+}
+
+@media (max-width: 768px) {
+  .skills-showcase-grid {
+    grid-template-columns: 1fr; 
+  }
+}
