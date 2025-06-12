@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from 'react-router-dom'; // 1. Importe o Outlet
 import './styles/App.css';
 
 import Home from './pages/Home';
@@ -14,27 +15,14 @@ import StarField from './components/StarField';
 function App() {
   return (
     <>
-      <StarField />
-      <Header />
+      <StarField /> 
+      <Header />    
+      
+      <main>
+        <Outlet />  
+      </main>
 
-      <section id='home'>
-        <Home />
-      </section>
-
-      <section className='page-section'>
-        <About />
-      </section>
-
-      <section id='projetos' className='page-section'>
-        <Projects />
-      </section>
-
-      <section id='contato' className='page-section'>
-        <Contact />
-      </section>
-
-      <Footer />
-
+      <Footer /> 
     </>
   )
 }
