@@ -10,7 +10,7 @@ const About = () => {
     <main className='page-container'>
         <h1 className='page-title'>Minhas Habilidades</h1>
 
-        <div className='skills-showcase-grid'>
+        <div id='sobre' className='skills-showcase-grid'>
 
             <div className='skill-showcase-card'>
                 <h2><FaJava /> Linguagens</h2>

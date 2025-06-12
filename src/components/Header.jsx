@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import '../styles/Header.css'; 
 
 
@@ -7,20 +6,22 @@ function Header() {
     return (
         <header className="header-section">
             <div className="header__container">
-                <h1 className="header__title">Ana Livia Turazzi</h1>
+                <a href="#home" className="header__logo-link">
+                    <h1 className="header__title">Ana Livia Turazzi</h1>
+                </a>   
+            
 
                 <nav className='main-nav'>
                     <ul>
-                        <li><Link to="/">Início</Link></li>
-                        <li><Link to="/About">Habilidades</Link></li>
-                        <li><Link to="/Projects">Projetos</Link></li>
-                        <li><Link to="/Contacts">Contatos</Link></li>
+                        <li><a href='#home'>Início</a></li>
+                        <li><a href='#sobre'>Habilidades</a></li>
+                        <li><a href='#projetos'>Projetos</a></li>
+                        <li><a href='#contato'>Contato</a></li>
                     </ul>
                 </nav>
-            
-            </div>
 
-        
+            </div>
+    
         </header>
 
     );
