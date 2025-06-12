@@ -1,30 +1,24 @@
-import React from "react";
-import { Outlet } from 'react-router-dom'; // 1. Importe o Outlet
-import './styles/App.css';
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+import React from 'react';
+import { Outlet } from 'react-router-dom'; 
 
+import StarField from './components/StarField';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import StarField from './components/StarField';
 
+import './styles/App.css';
 
 function App() {
   return (
     <>
-      <StarField /> 
-      <Header />    
-      
+      <StarField />
+      <Header />
       <main>
-        <Outlet />  
+        <Outlet />
       </main>
-
-      <Footer /> 
+      <Footer />
     </>
-  )
+  );
 }
 
 export default App;

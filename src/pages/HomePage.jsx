@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HomeContent from './Home'; 
+import Home from './Home'; 
 import About from './About';
 import Contact from './Contact';
 
@@ -9,7 +9,7 @@ const HomePage = () => {
     <>
 
       <section id="home">
-        <HomeContent />
+        <Home />
       </section>
 
       <section id="habilidades">
